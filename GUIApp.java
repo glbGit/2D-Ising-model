@@ -9,8 +9,8 @@ import javax.swing.text.BadLocationException;
 
 public class GUIApp extends JFrame implements ActionListener {
 	
-	private static int L;
-	private static double T;
+	private static int L;			// lattice size
+	private static double T;		// temperature
 	public Container c;
 	public JPanel sP;
 	private final JPanel nP = new JPanel();
@@ -62,7 +62,7 @@ public class GUIApp extends JFrame implements ActionListener {
 		
 		if (cmd.equals("Start")) {
 			if (latoText.getText().equals("") || tempText.getText().equals("")) {
-				JOptionPane.showMessageDialog(null, new String("Insert value for both size and temperature."), "WARNING", JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(null, new String("Insert value of both size and temperature."), "WARNING", JOptionPane.INFORMATION_MESSAGE);
 			} else {
 				setRunning();
 				running = true;
