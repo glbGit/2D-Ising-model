@@ -34,7 +34,7 @@ public class Ising implements Runnable {
 			
 			for (int t = 0; GUIApp.running; t++) {
 					i = t%(N);
-					//borders
+					// boundaries
 					if (i%L == L - 1) b1 = 1;
 					else b1 = 0;
 					if (i%L == 0) b2 = 1;
